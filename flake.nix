@@ -48,7 +48,7 @@
 			default = zfs_exporter;
 		};
 
-		defaultNixpkgsOverlay = self: super: {
+		overlays.default = self: super: {
 			zfs_exporter = packages.zfs_exporter;
 		};
 
